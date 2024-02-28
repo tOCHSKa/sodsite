@@ -15,12 +15,13 @@
         {% block title %}
             Bienvenue
         {% endblock %}
+        {# <i class="fa-solid fa-house text-light"></i>#}
     </title>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
-        <a class="navbar-brand text-primary" href="#"><i class="fa-solid fa-house text-primary"></i>
+        <a class="navbar-brand text-light" href="#"><img src="{{ asset('/img/WOW.svg') }}" style="width: 30px; height: 24px;">
         SoD Phase 2</a>
         <button class="navbar-toggler mb-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"><svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg></span>
@@ -28,41 +29,41 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                   <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle text-primary" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Runes
               </a>
               <ul class="dropdown-menu bg-dark ">
-                <li><a class="dropdown-item text-primary" href="#">Druid Runes</a></li>
-                <li><a class="dropdown-item text-primary" href="#">Hunter Runes</a></li>
+                <li><a class="dropdown-item text-light" href="#">Druid Runes</a></li>
+                <li><a class="dropdown-item text-light" href="#">Hunter Runes</a></li>
                 {# <li><hr class="dropdown-divider"></li> #}
-                <li><a class="dropdown-item text-primary" href="#">Mage Runes</a></li>
-                <li><a class="dropdown-item text-primary" href="#">Paladin Runes</a></li>
-                <li><a class="dropdown-item text-primary" href="#">Priest Runes</a></li>
-                <li><a class="dropdown-item text-primary" href="#">Rogue Runes</a></li>
-                <li><a class="dropdown-item text-primary" href="#">Shaman Runes</a></li>
-                <li><a class="dropdown-item text-primary" href="#">Warlock Runes</a></li>
-                <li><a class="dropdown-item text-primary" href="#">Warrior Runes</a></li>
+                <li><a class="dropdown-item text-light" href="#">Mage Runes</a></li>
+                <li><a class="dropdown-item text-light" href="#">Paladin Runes</a></li>
+                <li><a class="dropdown-item text-light" href="#">Priest Runes</a></li>
+                <li><a class="dropdown-item text-light" href="#">Rogue Runes</a></li>
+                <li><a class="dropdown-item text-light" href="#">Shaman Runes</a></li>
+                <li><a class="dropdown-item text-light" href="#">Warlock Runes</a></li>
+                <li><a class="dropdown-item text-light" href="#">Warrior Runes</a></li>
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link active text-primary" aria-current="page" href="#">Tier List & Builds</a>
+              <a class="nav-link active text-light" aria-current="page" href="#">Tier List & Builds</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-primary" href="#">Talent Calculator</a>
+              <a class="nav-link text-light" href="#">Talent Calculator</a>
             </li>
               <li class="nav-item">
-              <a class="nav-link active text-primary" href="#">Professions</a>
+              <a class="nav-link active text-light" href="#">Professions</a>
             </li>
               <li class="nav-item">
-              <a class="nav-link active text-primary" href="#">Dungeons</a>
+              <a class="nav-link active text-light" href="#">Dungeons</a>
             </li>
               <li class="nav-item">
-              <a class="nav-link active text-primary" href="#">Pre-Questing</a>
+              <a class="nav-link active text-light" href="#">Pre-Questing</a>
             </li>
           </ul>
           <form class="d-flex searchBar" role="search">
             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-primary" type="submit">Search</button>
+            <button class="btn btn-outline-light" type="submit">Search</button>
           </form>
         </div>
       </div>
@@ -72,7 +73,7 @@
   <div class="row">
     <div class="col-lg-6 mx-auto text-center"> <!-- Utilise 6 colonnes sur les écrans d'ordinateur et centre le contenu -->
       <div class="card mt-5" style="width: 100%;">
-        <img src="..." class="card-img-top" alt="...">
+        <img src="{{ asset('/img/fondecran.jpg') }}" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">Card title</h5>
           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
