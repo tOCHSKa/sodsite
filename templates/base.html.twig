@@ -19,82 +19,67 @@
     </title>
   </head>
   <body>
-{# <nav class="navbar navbar-expand-lg bg-dark">
-  <div class="container">
-    <a class="navbar-brand text-light" href="#">
-      <img src="{{ asset('/img/WOW.svg') }}" style="width: 30px; height: 24px;">
-      SoD Phase 2
-    </a>
-    <button class="navbar-toggler mb-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon">
-        <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-          <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/>
-        </svg>
-      </span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <form class="d-flex searchBar" role="search">
-        <input class="form-control me-2 bg-dark text-light" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-light" disabled  type="submit">
-          <i class="fa-solid fa-magnifying-glass"></i>
-        </button>
-      </form>
-    </div>
-  </div>
-</nav> #}
 
 <div class="container-fluid bg-dark position-sticky sticky-top">
   <div class="row">
     <div class="col">
       <ul class="list-unstyled d-flex flex-row justify-content-center mt-3">
-                  <li class="dropdown me-3">
-              <a class="dropdown-toggle text-light  text-decoration-none" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                <img class="me-1" src="{{ asset('/img/rune.png') }}" style="width: 24px; height: 24px;" title="Runes" alt="Runes"><span class="inactive">Runes</span>
+        <li class="dropdown me-3">
+          <a class="dropdown-toggle text-light  text-decoration-none" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <img class="me-1" src="{{ asset('/img/rune.png') }}" style="width: 24px; height: 24px;" title="Runes" alt="Runes"><span class="inactive">Runes</span>
+          </a>
+          <ul class="dropdown-menu dropdown-menu-dark">
+            <li><a class="dropdown-item text-orange" href="#"><img class="me-2" src="{{ asset('/img/druid.png') }}" style="width: 24px; height: 24px;">Druid Runes</a></li>
+            <li><a class="dropdown-item text-success" href="#"><img class="me-2" src="{{ asset('/img/hunter.png') }}" style="width: 24px; height: 24px;">Hunter Runes</a></li>
+            {# <li><hr class="dropdown-divider"></li> #}
+            <li><a class="dropdown-item text-info" href="#"><img class="me-2" src="{{ asset('/img/mage.png') }}" style="width: 24px; height: 24px;">Mage Runes</a></li>
+            <li><a class="dropdown-item text-rose" href="#"><img class="me-2" src="{{ asset('/img/paladin.png') }}" style="width: 24px; height: 24px;">Paladin Runes</a></li>
+            <li><a class="dropdown-item" href="#"><img class="me-2" src="{{ asset('/img/priest.png') }}" style="width: 24px; height: 24px;">Priest Runes</a></li>
+            <li><a class="dropdown-item text-jaune" href="#"><img class="me-2" src="{{ asset('/img/rogue.png') }}" style="width: 24px; height: 24px;">Rogue Runes</a></li>
+            <li><a class="dropdown-item text-primary" href="#"><img class="me-2" src="{{ asset('/img/shaman.png') }}" style="width: 24px; height: 24px;">Shaman Runes</a></li>
+            <li><a class="dropdown-item text-violet" href="#"><img class="me-2" src="{{ asset('/img/warlock.png') }}" style="width: 24px; height: 24px;">Warlock Runes</a></li>
+            <li><a class="dropdown-item text-marron" href="#"><img class="me-2" src="{{ asset('/img/warrior.png') }}" style="width: 24px; height: 24px;">Warrior Runes</a></li>
+          </ul>
+          </li>
+            <li class="me-3">
+              <a href="#" class="text-decoration-none text-light">
+                <img class="me-1 rounded" src="{{ asset('/img/warcraftlog.jpg') }}" style="width: 24px; height: 24px;" title="Tier List & Builds" alt="Tier List & Builds">
+                <span class="inactive">Tier List & Builds</span>
               </a>
-              <ul class="dropdown-menu dropdown-menu-dark">
-                <li><a class="dropdown-item text-orange" href="#"><img class="me-2" src="{{ asset('/img/druid.png') }}" style="width: 24px; height: 24px;">Druid Runes</a></li>
-                <li><a class="dropdown-item text-success" href="#"><img class="me-2" src="{{ asset('/img/hunter.png') }}" style="width: 24px; height: 24px;">Hunter Runes</a></li>
-                {# <li><hr class="dropdown-divider"></li> #}
-                <li><a class="dropdown-item text-info" href="#"><img class="me-2" src="{{ asset('/img/mage.png') }}" style="width: 24px; height: 24px;">Mage Runes</a></li>
-                <li><a class="dropdown-item text-rose" href="#"><img class="me-2" src="{{ asset('/img/paladin.png') }}" style="width: 24px; height: 24px;">Paladin Runes</a></li>
-                <li><a class="dropdown-item" href="#"><img class="me-2" src="{{ asset('/img/priest.png') }}" style="width: 24px; height: 24px;">Priest Runes</a></li>
-                <li><a class="dropdown-item text-jaune" href="#"><img class="me-2" src="{{ asset('/img/rogue.png') }}" style="width: 24px; height: 24px;">Rogue Runes</a></li>
-                <li><a class="dropdown-item text-primary" href="#"><img class="me-2" src="{{ asset('/img/shaman.png') }}" style="width: 24px; height: 24px;">Shaman Runes</a></li>
-                <li><a class="dropdown-item text-violet" href="#"><img class="me-2" src="{{ asset('/img/warlock.png') }}" style="width: 24px; height: 24px;">Warlock Runes</a></li>
-                <li><a class="dropdown-item text-marron" href="#"><img class="me-2" src="{{ asset('/img/warrior.png') }}" style="width: 24px; height: 24px;">Warrior Runes</a></li>
-              </ul>
             </li>
-        <li class="me-3"><a href="#" class="text-decoration-none text-light">
-        <img class="me-1 rounded" src="{{ asset('/img/warcraftlog.jpg') }}" style="width: 24px; height: 24px;" title="Tier List & Builds" alt="Tier List & Builds"><span class="inactive">Tier List & Builds</span>
-        </a></li>
-        <li class="me-3"><a href="#" class="text-decoration-none text-light">
-        <img class="me-1" src="{{ asset('/img/talent.png') }}" style="width: 24px; height: 24px;" title="Talent Calculator" alt="Talent Calculator"><span class="inactive">Talent Calculator</span>
-        </a></li>
-          <li class="dropdown me-3">
-            <a class="dropdown-toggle text-light  text-decoration-none" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              <img class="me-1 " src="{{ asset('/img/profession.png') }}" style="width: 24px; height: 24px;" title="Professions" alt="Professions"><span class="inactive">Professions</span>
-            </a>
-            <ul class="dropdown-menu dropdown-menu-dark">
-              <li><a class="dropdown-item" href="#"><img class="me-2" src="https://www.wow-professions.com/images/icons/professions/alchemy.png" style="width: 24px; height: 24px;">Alchemy</a></li>
-              <li><a class="dropdown-item" href="#"><img class="me-2" src="https://www.wow-professions.com/images/icons/professions/blacksmithing.png" style="width: 24px; height: 24px;">Blacksmithing</a></li>
-              <li><a class="dropdown-item" href="#"><img class="me-2" src="https://www.wow-professions.com/images/icons/professions/enchanting.png" style="width: 24px; height: 24px;">Enchanting</a></li>
-              <li><a class="dropdown-item" href="#"><img class="me-2" src="https://www.wow-professions.com/images/icons/professions/engineering.png" style="width: 24px; height: 24px;">Engineering</a></li>
-              <li><a class="dropdown-item" href="#"><img class="me-2" src="https://www.wow-professions.com/images/icons/professions/leatherworking.png" style="width: 24px; height: 24px;">Leatherworking</a></li>
-              <li><a class="dropdown-item" href="#"><img class="me-2" src="https://www.wow-professions.com/images/icons/professions/tailoring.png" style="width: 24px; height: 24px;">Tailoring</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#"><img class="me-2" src="https://www.wow-professions.com/images/icons/professions/mining.png" style="width: 24px; height: 24px;">Mining</a></li>
-              <li><a class="dropdown-item" href="#"><img class="me-2" src="https://www.wow-professions.com/images/icons/professions/herbalism.png" style="width: 24px; height: 24px;">Herbalism</a></li>
-              <li><a class="dropdown-item" href="#"><img class="me-2" src="https://www.wow-professions.com/images/icons/professions/skinning.png" style="width: 24px; height: 24px;">Skinning</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#"><img class="me-2" src="https://www.wow-professions.com/images/icons/professions/cooking.png" style="width: 24px; height: 24px;">Cooking</a></li>
-              <li><a class="dropdown-item" href="#"><img class="me-2" src="https://www.wow-professions.com/images/icons/professions/fishing.png" style="width: 24px; height: 24px;">Fishing</a></li>
-              <li><a class="dropdown-item" href="#"><img class="me-2" src="https://www.wow-professions.com/images/icons/professions/first-aid.png" style="width: 24px; height: 24px;">First Aid</a></li>
-              <li><a class="dropdown-item" href="#"><img class="me-2" src="https://www.wow-professions.com/images/icons/professions/lockpicking.png" style="width: 24px; height: 24px;">Lockpicking</a></li>
-            </ul>
+            <li class="me-3">
+              <a href="#" class="text-decoration-none text-light">
+                <img class="me-1" src="{{ asset('/img/talent.png') }}" style="width: 24px; height: 24px;" title="Talent Calculator" alt="Talent Calculator">
+                <span class="inactive">Talent Calculator</span>
+              </a>
             </li>
             <li class="dropdown me-3">
               <a class="dropdown-toggle text-light  text-decoration-none" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              <img class="me-1" src="{{ asset('/img/dungeon.png') }}" style="width: 24px; height: 24px;" title="Dungeons" alt="Dungeons"><span class="inactive">Dungeons</span>
+                <img class="me-1 " src="{{ asset('/img/profession.png') }}" style="width: 24px; height: 24px;" title="Professions" alt="Professions">
+                <span class="inactive">Professions</span>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li><a class="dropdown-item" href="#"><img class="me-2" src="https://www.wow-professions.com/images/icons/professions/alchemy.png" style="width: 24px; height: 24px;">Alchemy</a></li>
+                <li><a class="dropdown-item" href="#"><img class="me-2" src="https://www.wow-professions.com/images/icons/professions/blacksmithing.png" style="width: 24px; height: 24px;">Blacksmithing</a></li>
+                <li><a class="dropdown-item" href="#"><img class="me-2" src="https://www.wow-professions.com/images/icons/professions/enchanting.png" style="width: 24px; height: 24px;">Enchanting</a></li>
+                <li><a class="dropdown-item" href="#"><img class="me-2" src="https://www.wow-professions.com/images/icons/professions/engineering.png" style="width: 24px; height: 24px;">Engineering</a></li>
+                <li><a class="dropdown-item" href="#"><img class="me-2" src="https://www.wow-professions.com/images/icons/professions/leatherworking.png" style="width: 24px; height: 24px;">Leatherworking</a></li>
+                <li><a class="dropdown-item" href="#"><img class="me-2" src="https://www.wow-professions.com/images/icons/professions/tailoring.png" style="width: 24px; height: 24px;">Tailoring</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#"><img class="me-2" src="https://www.wow-professions.com/images/icons/professions/mining.png" style="width: 24px; height: 24px;">Mining</a></li>
+                <li><a class="dropdown-item" href="#"><img class="me-2" src="https://www.wow-professions.com/images/icons/professions/herbalism.png" style="width: 24px; height: 24px;">Herbalism</a></li>
+                <li><a class="dropdown-item" href="#"><img class="me-2" src="https://www.wow-professions.com/images/icons/professions/skinning.png" style="width: 24px; height: 24px;">Skinning</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#"><img class="me-2" src="https://www.wow-professions.com/images/icons/professions/cooking.png" style="width: 24px; height: 24px;">Cooking</a></li>
+                <li><a class="dropdown-item" href="#"><img class="me-2" src="https://www.wow-professions.com/images/icons/professions/fishing.png" style="width: 24px; height: 24px;">Fishing</a></li>
+                <li><a class="dropdown-item" href="#"><img class="me-2" src="https://www.wow-professions.com/images/icons/professions/first-aid.png" style="width: 24px; height: 24px;">First Aid</a></li>
+                <li><a class="dropdown-item" href="#"><img class="me-2" src="https://www.wow-professions.com/images/icons/professions/lockpicking.png" style="width: 24px; height: 24px;">Lockpicking</a></li>
+              </ul>
+            </li>
+            <li class="dropdown me-3">
+              <a class="dropdown-toggle text-light  text-decoration-none" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <img class="me-1" src="{{ asset('/img/dungeon.png') }}" style="width: 24px; height: 24px;" title="Dungeons" alt="Dungeons">
+                <span class="inactive">Dungeons</span>
               </a>
               <ul class="dropdown-menu dropdown-menu-dark">
                 <li><a class="dropdown-item" href="#">Ragefire Chasm</a></li>
@@ -107,23 +92,29 @@
                 <li><a class="dropdown-item" href="#">Scarlet Monastery</a></li>
                 {# <li><hr class="dropdown-divider"></li> #}
               </ul>
+              </li>
+              <li>
+              <a href="#" class="text-decoration-none text-light me-5">
+                <img class="me-1" src="{{ asset('/img/quest.png') }}" style="width: 24px; height: 24px;" title="Pre-Questing" alt="Pre-Questing">
+                <span class="inactive">Pre-Questing</span>
+              </a>
             </li>
-            <li><a href="#" class="text-decoration-none text-light me-5">
-              <img class="me-1" src="{{ asset('/img/quest.png') }}" style="width: 24px; height: 24px;" title="Pre-Questing" alt="Pre-Questing"><span class="inactive">Pre-Questing</span></a></li>
-            <li><form class="d-none d-lg-flex me-1" role="search">
+            <li>
+              <form class="d-none d-lg-flex me-1" role="search">
                 <input class="form-control form-control-sm me-1 text-light" type="search" placeholder="Search" aria-label="Search">
                 <button class="btn btn-outline-light btn-sm" disabled  type="submit">
                   <i class="fa-solid fa-magnifying-glass"></i>
                 </button>
               </form>
-              </li>
-            </ul>
+            </li>
+        </ul>
       </div>
+    </div>
   </div>
 </div>
 
 
-<div class="container-fluid">
+<div class="container-fluid bckground">
   <div class="row">
     <div class="col-lg-6 mx-auto text-center"> <!-- Utilise 6 colonnes sur les écrans d'ordinateur et centre le contenu -->
       <div class="card mt-5" style="width: 100%;">

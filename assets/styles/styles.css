@@ -2,7 +2,6 @@
 
 * {
     font-family: "Noto Sans", sans-serif;
-    /* background-color: #15171E; */
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -14,7 +13,8 @@
 }
 
 .bckground {
-    background-color: #15171E;
+    background-color: #2A2B2B;
+    ;
 }
 
 .dropdown-item .text-light:hover {
