@@ -2,7 +2,7 @@
 
 * {
     font-family: "Noto Sans", sans-serif;
-    background-color: #15171E;
+    /* background-color: #15171E; */
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -15,4 +15,36 @@
 
 .bckground {
     background-color: #15171E;
+}
+
+.dropdown-item .text-light:hover {
+    color: #007bff;
+    /* Couleur primaire au survol */
+}
+
+.text-orange {
+    color: #FF7F27;
+}
+
+.text-rose {
+    color: #E78CBA;
+}
+
+.text-jaune {
+    color: #F0F569;
+}
+
+.text-violet {
+    color: #9482C9;
+}
+
+.text-marron {
+    color: #C79C6E;
+}
+
+
+@media (max-width: 1158px) {
+    .inactive {
+        display: none;
+    }
 }
